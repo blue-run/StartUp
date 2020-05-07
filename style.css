@@ -1,0 +1,71 @@
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.9);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+html, body {
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin: 2rem 0rem;
+}
+
+.img-fluid {
+    max-width: 30%;
+    max-height: 100%;
+    transition: all 1s;
+    animation: 2s ease-out 0s 1 bounce;
+}
+
+.img-fluid:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.buffer {
+    min-height: 10rem;
+}
+
+p {
+    color: mediumspringgreen;
+    font-size: 3rem;
+}
+
+#intro {
+    color: lightgrey;
+    font-size: 1rem;
+}
+
+.btn {
+    margin: 3rem 0rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
+.head-text {
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
